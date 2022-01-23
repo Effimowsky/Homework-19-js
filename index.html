@@ -8,17 +8,61 @@
     <title>Homework-19-js</title>
   </head>
   <body>
-    <form id="user-signup" action="/save-user" method="post" novalidate>
+    <form id="user-signup" action="save-user" method="post" novalidate>
       <div class="form-field">
         <label for="username">Enter Name</label>
         <input
-          type="username"
+          id="username"
           type="text"
           placeholder="User Name"
           required
           minlength="5"
         />
-        <span class="field-error"></span>
+        <span class="field-error" id="username-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="email">Enter Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="User Email"
+          required
+          minlength="5"
+        />
+        <span class="field-error" id="email-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="personal_number">Personal Number</label>
+        <input
+          id="personal-number"
+          type="text"
+          placeholder="Personal Number"
+          required
+          pattern="[0-9]{11}"
+        />
+        <span class="field-error" id="personal-number-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="mobile-number">Enter Mobile Number</label>
+        <input
+          id="mobile-number"
+          type="tel"
+          placeholder="User Phone"
+          required
+          pattern="[0-9]{9}"
+        />
+        <span class="field-error" id="mobile-number-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="position">Enter Position</label>
+        <input
+          id="position"
+          type="text"
+          placeholder="About Position"
+          required
+          maxlength="30"
+        />
+        <span class="field-error" id="about-position-error"></span>
       </div>
       <button type="submit">Save</button>
     </form>

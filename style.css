@@ -1,0 +1,13 @@
+.form-field {
+  margin-bottom: 15px;
+}
+input.has-error {
+  border: 3px solid red;
+}
+input.has-success {
+  border: 3px solid green;
+}
+.field-error {
+  color: red;
+  min-height: 15px;
+}
