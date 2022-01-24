@@ -2,10 +2,10 @@
   margin-bottom: 15px;
 }
 input.has-error {
-  border: 3px solid red;
+  border: 2px solid red;
 }
 input.has-success {
-  border: 3px solid green;
+  border: 2px solid green;
 }
 .field-error {
   color: red;
